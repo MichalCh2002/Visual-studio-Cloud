@@ -7,7 +7,7 @@ namespace TestProgram
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            //new comment 
+            //new comment konečně
         }
     }
 }
