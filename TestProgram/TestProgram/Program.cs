@@ -8,6 +8,8 @@ namespace TestProgram
         {
             Console.WriteLine("Hello World!");
             //new comment konečně 2
+
+            //metoda xy
         }
     }
 }
