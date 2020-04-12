@@ -14,16 +14,17 @@ namespace WebCalculator.Pages
 
         #region Proměnné
 
-        [Display(Name = "Číslo 1")]
         [BindProperty()] // propojení s html
-        public Int32 Cislo1 { get; set; }
-
-        [Display(Name = "Číslo 2")]
-        [BindProperty()] // propojení s html
-        public Int32 Cislo2 { get; set; }
+        public double Cislo1 { get; set; }
 
         [BindProperty()] // propojení s html
-        public Int32 Vysledek { get; set; }
+        public double Cislo2 { get; set; }
+
+        [BindProperty()] // propojení s html
+        public string Vysledek { get; set; }
+
+        [BindProperty]
+        public char Znamenko { get; set; } // znamenko do rovnice
         #endregion
 
         /// <summary>
@@ -31,24 +32,62 @@ namespace WebCalculator.Pages
         /// </summary>
         public void OnGet()
         {
-
+            Znamenko = '+';
         }
 
         public ActionResult OnPost()
         {
-            //výpočet
-            Vysledek = Cislo1 * Cislo2;
+            
+            VypocitejDleZnamenka(Znamenko);
+
 
             //překreslí stránku
             return Page();
         }
 
-        /*
-        TODO: 
+        /// <summary>
+        /// Nastaví výsledek na dle výpočtu pomocí zadaného znaménka
+        /// </summary>
+        /// <param name="znamenko"></param>
+        private void VypocitejDleZnamenka(char znamenko)
+        {
 
-            Možnost zvolit operaci výpočtu.
-        
-         */
+            if (znamenko.Equals('+')){
+                double v = Cislo1 + Cislo2;
+                Vysledek = v.ToString();
+            }
+
+            if (znamenko.Equals('-'))
+            {
+                double v = Cislo1 - Cislo2;
+                Vysledek = v.ToString();
+            }
+
+            if (znamenko.Equals('*'))
+            {
+                double v = Cislo1 * Cislo2;
+                Vysledek = v.ToString();
+            }
+
+            if (znamenko.Equals('/'))
+            {
+                if (Cislo2 != 0)
+                {
+                    double v = Cislo1 / Cislo2;
+                    Vysledek = v.ToString();
+                }
+                else
+                {
+                    Vysledek = "nelze dělit nulou";
+                }
+
+
+                
+            }
+
+        }
+
+
 
 
 

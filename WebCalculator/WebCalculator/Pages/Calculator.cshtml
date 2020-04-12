@@ -5,24 +5,52 @@
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
+<link rel="stylesheet" href="~/css/style_calc.css">  
 <h1>Kalkulačka</h1>
 
-<form method="post">
-    <div>
-        @*TagHelper*@
-        <label asp-for="@Model.Cislo1"> </label>
-        <input asp-for="@Model.Cislo1" />
 
-        @*PageHelper*@
-        @Html.LabelFor(m => m.Cislo2)
-        @Html.TextBoxFor(m => m.Cislo2)
+
+
+
+
+
+<form class="equationForm" method="post">
+
+    <div class="znamenko">
+        <p>Zvolte operaci:</p>
+        <input type="radio" name="znamenko" value="+" checked asp-for="@Model.Znamenko" /> +
+        <input type="radio" name="znamenko" value="-" asp-for="@Model.Znamenko" /> -
+        <input type="radio" name="znamenko" value="*" asp-for="@Model.Znamenko" /> *
+        <input type="radio" name="znamenko" value="/" asp-for="@Model.Znamenko" /> /
+    </div>
+    
+    
+
+
+    <div class="equation">
+        <div>
+            <input asp-for="@Model.Cislo1">
+        </div>
+        <div>
+            <p>@Model.Znamenko</p>
+        </div>
+        <div>
+            <input asp-for="@Model.Cislo2">
+        </div>
+        <div>
+            <p>=</p>
+        </div>
+        <div>
+            <p>@Model.Vysledek</p>
+        </div>
     </div>
 
-    <div>
-        <p>@Model.Vysledek</p>
+    <div submitDiv>
+        <input type="submit" value="Vypočti" class="subBtn" />
     </div>
 
 
-    <input type="submit" value="Vypočti" />
 </form>
+
+
 
