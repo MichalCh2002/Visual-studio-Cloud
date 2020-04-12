@@ -1,0 +1,28 @@
+﻿@page
+@model WebCalculator.Pages.CalculatorModel
+@{
+    ViewData["Title"] = "Calculator";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Kalkulačka</h1>
+
+<form method="post">
+    <div>
+        @*TagHelper*@
+        <label asp-for="@Model.Cislo1"> </label>
+        <input asp-for="@Model.Cislo1" />
+
+        @*PageHelper*@
+        @Html.LabelFor(m => m.Cislo2)
+        @Html.TextBoxFor(m => m.Cislo2)
+    </div>
+
+    <div>
+        <p>@Model.Vysledek</p>
+    </div>
+
+
+    <input type="submit" value="Vypočti" />
+</form>
+
