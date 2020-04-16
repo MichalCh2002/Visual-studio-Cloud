@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Security.Authentication.ExtendedProtection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -193,7 +195,7 @@ namespace refOutForm
 
         #endregion
 
-        //#region str4
+        #region str4
 
         Random r = new Random();
         int[] pole = new int[10];
@@ -205,6 +207,7 @@ namespace refOutForm
         /// <param name="e"></param>
         private void btnNacist4_Click(object sender, EventArgs e)
         {
+            //vymazání txtBoxu před načtením
             txtBxPoleOut.Text = string.Empty;
 
             for (int i = 0; i < pole.Length; i++)
@@ -220,8 +223,13 @@ namespace refOutForm
 
         private void btnVynulovat4_Click(object sender, EventArgs e)
         {
+            //vymazání txtBoxu před načtením
             txtBxPoleOut.Text = string.Empty;
+
+            //vynulování pole
             vynulovatPole(ref pole);
+
+            //načtení vynulovaného pole
             foreach (int i in pole)
             {
                 txtBxPoleOut.Text += i + " - ";
@@ -229,6 +237,10 @@ namespace refOutForm
 
         }
 
+        /// <summary>
+        /// Statická metoda nahradí všechna čísla za nulu
+        /// </summary>
+        /// <param name="pole"></param>
         public static void vynulovatPole(ref int[] pole)
         {
             for (int i = 0; i < pole.Length; i++)
@@ -236,6 +248,130 @@ namespace refOutForm
                 pole[i] = 0;
             }
         }
+        #endregion
+
+        #region str5
+
+        /// <summary>
+        /// Načte nově vygenerované pole
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnNacist5_Click(object sender, EventArgs e)
+        {
+            txtBxPoleOut5.Text = string.Empty;
+
+            for (int i = 0; i < pole.Length; i++)
+            {
+                pole[i] = r.Next(-10,10);
+            }
+
+            foreach (int i in pole)
+            {
+                txtBxPoleOut5.Text += "[" + i + "] ";
+            }
+        }
+
+
+        private void btnPrevest5_Click(object sender, EventArgs e)
+        {
+            // vzmaže formulář před vypsáním
+            txtBxPoleOut5.Text = string.Empty;
+
+            //převede záporná čísla v poli na kladná
+            //záhadně funguje i bez ref
+            absolutniHodnota(pole);
+
+            //výpis
+            foreach (int i in pole)
+            {
+                txtBxPoleOut5.Text += "[" + i + "] ";
+            }
+
+        }
+
+        /// <summary>
+        /// převede záporná čísla v poli na kladná
+        /// </summary>
+        /// <param name="pole">Pole intů</param>
+        public static void absolutniHodnota(int[] pole)
+        {
+            for (int i = 0; i < pole.Length; i++)
+            {
+                if (pole[i] <= 0)
+                {
+                    pole[i] += (-1) * (2 * pole[i]);
+                }
+            }
+           
+        }
+
+
+        #endregion
+
+        #region str6
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            //proměnné
+            int velikost = int.Parse(txtBxVelikost6.Text);
+            int min = int.Parse(txtBxMin6.Text);
+            int max = int.Parse(txtBxMax6.Text);
+            double cas;
+            string vypis;
+            
+
+            //vygeneruje pole, vrátí čas a výpis
+            generujPole(velikost, min, max, out cas, out vypis);
+
+            //mazání
+            txtBxPoleOut6.Text = string.Empty;
+            txtBxCas.Text = string.Empty;
+            //výpis
+            txtBxPoleOut6.Text = vypis;
+            txtBxCas.Text = cas.ToString()+ " ms";
+
+
+
+        }
+
+        public static void generujPole(int velikost, int min, int max, out double cas, out string vypis)
+        {
+            Random r = new Random();
+            Stopwatch stopky = new Stopwatch();
+            vypis = string.Empty;
+
+            //začátek měření času
+            stopky.Start();
+
+            //vytvoření pole dané velikosti
+            int[] pole = new int[velikost];
+
+            //naplnění pole v daném rozsahu 
+            for (int i = 0; i < pole.Length; i++)
+            {
+                pole[i] = r.Next(min, max);
+            }
+
+            //výpis
+            foreach (int i in pole)
+            {
+                vypis +=  i + "- ";
+            }
+
+            //konec měření času
+            stopky.Stop();
+
+            //vrátí změřený čas
+            cas = stopky.ElapsedMilliseconds;
+
+        }
+        #endregion
+
+        //#region str7 [Game of life]
+
+        //coming soon
+        
 
 
 

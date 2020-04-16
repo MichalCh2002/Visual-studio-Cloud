@@ -29,6 +29,18 @@
         private void InitializeComponent()
         {
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.Close = new System.Windows.Forms.Label();
@@ -63,11 +75,33 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btnNacist4 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnVynulovat4 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.txtBxPoleOut = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuSeparator6 = new Bunifu.Framework.UI.BunifuSeparator();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.btnNacist5 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnPrevest5 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.txtBxPoleOut5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuSeparator7 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.txtBxMax6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.txtBxMin6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.txtBxVelikost6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.txtBxCas = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtBxPoleOut6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuSeparator9 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.bunifuSeparator8 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn7 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -78,9 +112,12 @@
             this.btn2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnUvod = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnVynulovat4 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.txtBxPoleOut = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.btnNacist4 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuSeparator10 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.pnlHeader.SuspendLayout();
             this.bunifuPages1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -88,7 +125,11 @@
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
+            this.tabPage8.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -183,10 +224,10 @@
             this.bunifuPages1.Location = new System.Drawing.Point(0, 60);
             this.bunifuPages1.Multiline = true;
             this.bunifuPages1.Name = "bunifuPages1";
-            this.bunifuPages1.Page = this.tabPage5;
-            this.bunifuPages1.PageIndex = 4;
-            this.bunifuPages1.PageName = "tabPage5";
-            this.bunifuPages1.PageTitle = "tabPage5";
+            this.bunifuPages1.Page = this.tabPage1;
+            this.bunifuPages1.PageIndex = 0;
+            this.bunifuPages1.PageName = "tabPage1";
+            this.bunifuPages1.PageTitle = "tabPage1";
             this.bunifuPages1.SelectedIndex = 0;
             this.bunifuPages1.Size = new System.Drawing.Size(845, 495);
             this.bunifuPages1.TabIndex = 5;
@@ -211,9 +252,11 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
+            this.tabPage1.Controls.Add(this.bunifuPictureBox1);
             this.tabPage1.Controls.Add(this.bunifuSeparator2);
             this.tabPage1.Controls.Add(this.bunifuSeparator1);
             this.tabPage1.Controls.Add(this.H2);
+            this.tabPage1.Controls.Add(this.label20);
             this.tabPage1.Controls.Add(this.Description);
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
             this.tabPage1.Name = "tabPage1";
@@ -227,7 +270,7 @@
             this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
             this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(106, 213);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(106, 171);
             this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Size = new System.Drawing.Size(624, 48);
@@ -240,7 +283,7 @@
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(106, 287);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(106, 245);
             this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(624, 48);
@@ -254,7 +297,7 @@
             this.H2.BackColor = System.Drawing.Color.Transparent;
             this.H2.Font = new System.Drawing.Font("Open Sans", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.H2.ForeColor = System.Drawing.Color.White;
-            this.H2.Location = new System.Drawing.Point(344, 141);
+            this.H2.Location = new System.Drawing.Point(344, 99);
             this.H2.Name = "H2";
             this.H2.Size = new System.Drawing.Size(114, 45);
             this.H2.TabIndex = 4;
@@ -267,7 +310,7 @@
             this.Description.BackColor = System.Drawing.Color.Transparent;
             this.Description.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Description.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.Description.Location = new System.Drawing.Point(134, 260);
+            this.Description.Location = new System.Drawing.Point(134, 218);
             this.Description.Name = "Description";
             this.Description.Size = new System.Drawing.Size(546, 23);
             this.Description.TabIndex = 5;
@@ -681,6 +724,81 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             // 
+            // btnNacist4
+            // 
+            this.btnNacist4.ActiveBorderThickness = 1;
+            this.btnNacist4.ActiveCornerRadius = 20;
+            this.btnNacist4.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.btnNacist4.ActiveForecolor = System.Drawing.Color.Black;
+            this.btnNacist4.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.btnNacist4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.btnNacist4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNacist4.BackgroundImage")));
+            this.btnNacist4.ButtonText = "NAČÍST";
+            this.btnNacist4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNacist4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNacist4.ForeColor = System.Drawing.Color.Black;
+            this.btnNacist4.IdleBorderThickness = 1;
+            this.btnNacist4.IdleCornerRadius = 20;
+            this.btnNacist4.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(39)))));
+            this.btnNacist4.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.btnNacist4.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.btnNacist4.Location = new System.Drawing.Point(236, 359);
+            this.btnNacist4.Margin = new System.Windows.Forms.Padding(5);
+            this.btnNacist4.Name = "btnNacist4";
+            this.btnNacist4.Size = new System.Drawing.Size(149, 41);
+            this.btnNacist4.TabIndex = 22;
+            this.btnNacist4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNacist4.Click += new System.EventHandler(this.btnNacist4_Click);
+            // 
+            // btnVynulovat4
+            // 
+            this.btnVynulovat4.ActiveBorderThickness = 1;
+            this.btnVynulovat4.ActiveCornerRadius = 20;
+            this.btnVynulovat4.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.btnVynulovat4.ActiveForecolor = System.Drawing.Color.Black;
+            this.btnVynulovat4.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.btnVynulovat4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.btnVynulovat4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVynulovat4.BackgroundImage")));
+            this.btnVynulovat4.ButtonText = "VYNULOVAT";
+            this.btnVynulovat4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVynulovat4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVynulovat4.ForeColor = System.Drawing.Color.Black;
+            this.btnVynulovat4.IdleBorderThickness = 1;
+            this.btnVynulovat4.IdleCornerRadius = 20;
+            this.btnVynulovat4.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(39)))));
+            this.btnVynulovat4.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.btnVynulovat4.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.btnVynulovat4.Location = new System.Drawing.Point(410, 359);
+            this.btnVynulovat4.Margin = new System.Windows.Forms.Padding(5);
+            this.btnVynulovat4.Name = "btnVynulovat4";
+            this.btnVynulovat4.Size = new System.Drawing.Size(149, 41);
+            this.btnVynulovat4.TabIndex = 22;
+            this.btnVynulovat4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnVynulovat4.Click += new System.EventHandler(this.btnVynulovat4_Click);
+            // 
+            // txtBxPoleOut
+            // 
+            this.txtBxPoleOut.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBxPoleOut.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtBxPoleOut.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtBxPoleOut.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBxPoleOut.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtBxPoleOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtBxPoleOut.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.txtBxPoleOut.HintText = "POLE";
+            this.txtBxPoleOut.isPassword = false;
+            this.txtBxPoleOut.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.txtBxPoleOut.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.txtBxPoleOut.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.txtBxPoleOut.LineThickness = 3;
+            this.txtBxPoleOut.Location = new System.Drawing.Point(199, 238);
+            this.txtBxPoleOut.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBxPoleOut.MaxLength = 32767;
+            this.txtBxPoleOut.Name = "txtBxPoleOut";
+            this.txtBxPoleOut.Size = new System.Drawing.Size(385, 33);
+            this.txtBxPoleOut.TabIndex = 20;
+            this.txtBxPoleOut.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // bunifuSeparator6
             // 
             this.bunifuSeparator6.BackColor = System.Drawing.Color.Transparent;
@@ -722,6 +840,12 @@
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.tabPage6.Controls.Add(this.btnNacist5);
+            this.tabPage6.Controls.Add(this.btnPrevest5);
+            this.tabPage6.Controls.Add(this.txtBxPoleOut5);
+            this.tabPage6.Controls.Add(this.bunifuSeparator7);
+            this.tabPage6.Controls.Add(this.label10);
+            this.tabPage6.Controls.Add(this.label11);
             this.tabPage6.Location = new System.Drawing.Point(4, 4);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -729,9 +853,136 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "tabPage6";
             // 
+            // btnNacist5
+            // 
+            this.btnNacist5.ActiveBorderThickness = 1;
+            this.btnNacist5.ActiveCornerRadius = 20;
+            this.btnNacist5.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.btnNacist5.ActiveForecolor = System.Drawing.Color.Black;
+            this.btnNacist5.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.btnNacist5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.btnNacist5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNacist5.BackgroundImage")));
+            this.btnNacist5.ButtonText = "NAČÍST";
+            this.btnNacist5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNacist5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNacist5.ForeColor = System.Drawing.Color.Black;
+            this.btnNacist5.IdleBorderThickness = 1;
+            this.btnNacist5.IdleCornerRadius = 20;
+            this.btnNacist5.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(39)))));
+            this.btnNacist5.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.btnNacist5.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.btnNacist5.Location = new System.Drawing.Point(236, 359);
+            this.btnNacist5.Margin = new System.Windows.Forms.Padding(5);
+            this.btnNacist5.Name = "btnNacist5";
+            this.btnNacist5.Size = new System.Drawing.Size(149, 41);
+            this.btnNacist5.TabIndex = 25;
+            this.btnNacist5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNacist5.Click += new System.EventHandler(this.btnNacist5_Click);
+            // 
+            // btnPrevest5
+            // 
+            this.btnPrevest5.ActiveBorderThickness = 1;
+            this.btnPrevest5.ActiveCornerRadius = 20;
+            this.btnPrevest5.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.btnPrevest5.ActiveForecolor = System.Drawing.Color.Black;
+            this.btnPrevest5.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.btnPrevest5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.btnPrevest5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPrevest5.BackgroundImage")));
+            this.btnPrevest5.ButtonText = "PŘEVÉST";
+            this.btnPrevest5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrevest5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevest5.ForeColor = System.Drawing.Color.Black;
+            this.btnPrevest5.IdleBorderThickness = 1;
+            this.btnPrevest5.IdleCornerRadius = 20;
+            this.btnPrevest5.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(39)))));
+            this.btnPrevest5.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.btnPrevest5.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.btnPrevest5.Location = new System.Drawing.Point(410, 359);
+            this.btnPrevest5.Margin = new System.Windows.Forms.Padding(5);
+            this.btnPrevest5.Name = "btnPrevest5";
+            this.btnPrevest5.Size = new System.Drawing.Size(149, 41);
+            this.btnPrevest5.TabIndex = 24;
+            this.btnPrevest5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnPrevest5.Click += new System.EventHandler(this.btnPrevest5_Click);
+            // 
+            // txtBxPoleOut5
+            // 
+            this.txtBxPoleOut5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBxPoleOut5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtBxPoleOut5.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtBxPoleOut5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBxPoleOut5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtBxPoleOut5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtBxPoleOut5.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.txtBxPoleOut5.HintText = "POLE";
+            this.txtBxPoleOut5.isPassword = false;
+            this.txtBxPoleOut5.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.txtBxPoleOut5.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.txtBxPoleOut5.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.txtBxPoleOut5.LineThickness = 3;
+            this.txtBxPoleOut5.Location = new System.Drawing.Point(199, 238);
+            this.txtBxPoleOut5.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBxPoleOut5.MaxLength = 32767;
+            this.txtBxPoleOut5.Name = "txtBxPoleOut5";
+            this.txtBxPoleOut5.Size = new System.Drawing.Size(385, 33);
+            this.txtBxPoleOut5.TabIndex = 23;
+            this.txtBxPoleOut5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuSeparator7
+            // 
+            this.bunifuSeparator7.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator7.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            this.bunifuSeparator7.LineThickness = 1;
+            this.bunifuSeparator7.Location = new System.Drawing.Point(68, 126);
+            this.bunifuSeparator7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuSeparator7.Name = "bunifuSeparator7";
+            this.bunifuSeparator7.Size = new System.Drawing.Size(624, 48);
+            this.bunifuSeparator7.TabIndex = 22;
+            this.bunifuSeparator7.Transparency = 255;
+            this.bunifuSeparator7.Vertical = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Open Sans", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(60, 39);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(341, 45);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "5. Absolutní hodnota";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label11.Location = new System.Drawing.Point(64, 100);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(676, 33);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Statická metoda, jenž převede všechna záporná čísla na jejich absolutní hodnotu.\r" +
+    "\n\r\n\r\n";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // tabPage7
             // 
             this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.tabPage7.Controls.Add(this.txtBxMax6);
+            this.tabPage7.Controls.Add(this.txtBxMin6);
+            this.tabPage7.Controls.Add(this.txtBxVelikost6);
+            this.tabPage7.Controls.Add(this.bunifuThinButton21);
+            this.tabPage7.Controls.Add(this.txtBxCas);
+            this.tabPage7.Controls.Add(this.txtBxPoleOut6);
+            this.tabPage7.Controls.Add(this.bunifuSeparator9);
+            this.tabPage7.Controls.Add(this.bunifuSeparator8);
+            this.tabPage7.Controls.Add(this.label12);
+            this.tabPage7.Controls.Add(this.label14);
+            this.tabPage7.Controls.Add(this.label16);
+            this.tabPage7.Controls.Add(this.label15);
+            this.tabPage7.Controls.Add(this.label13);
             this.tabPage7.Location = new System.Drawing.Point(4, 4);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
@@ -739,9 +990,392 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "tabPage7";
             // 
+            // txtBxMax6
+            // 
+            this.txtBxMax6.AcceptsReturn = false;
+            this.txtBxMax6.AcceptsTab = false;
+            this.txtBxMax6.AnimationSpeed = 200;
+            this.txtBxMax6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBxMax6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtBxMax6.BackColor = System.Drawing.Color.Transparent;
+            this.txtBxMax6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBxMax6.BackgroundImage")));
+            this.txtBxMax6.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtBxMax6.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.txtBxMax6.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtBxMax6.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtBxMax6.BorderRadius = 1;
+            this.txtBxMax6.BorderThickness = 1;
+            this.txtBxMax6.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtBxMax6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBxMax6.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.txtBxMax6.DefaultText = "";
+            this.txtBxMax6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.txtBxMax6.HideSelection = true;
+            this.txtBxMax6.IconLeft = null;
+            this.txtBxMax6.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBxMax6.IconPadding = 10;
+            this.txtBxMax6.IconRight = null;
+            this.txtBxMax6.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBxMax6.Lines = new string[0];
+            this.txtBxMax6.Location = new System.Drawing.Point(581, 205);
+            this.txtBxMax6.MaxLength = 32767;
+            this.txtBxMax6.MinimumSize = new System.Drawing.Size(100, 35);
+            this.txtBxMax6.Modified = false;
+            this.txtBxMax6.Multiline = false;
+            this.txtBxMax6.Name = "txtBxMax6";
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBxMax6.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.Empty;
+            stateProperties2.FillColor = System.Drawing.Color.White;
+            stateProperties2.ForeColor = System.Drawing.Color.Empty;
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtBxMax6.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBxMax6.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBxMax6.OnIdleState = stateProperties4;
+            this.txtBxMax6.PasswordChar = '\0';
+            this.txtBxMax6.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtBxMax6.PlaceholderText = "MAX";
+            this.txtBxMax6.ReadOnly = false;
+            this.txtBxMax6.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtBxMax6.SelectedText = "";
+            this.txtBxMax6.SelectionLength = 0;
+            this.txtBxMax6.SelectionStart = 0;
+            this.txtBxMax6.ShortcutsEnabled = true;
+            this.txtBxMax6.Size = new System.Drawing.Size(100, 35);
+            this.txtBxMax6.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.txtBxMax6.TabIndex = 32;
+            this.txtBxMax6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtBxMax6.TextMarginBottom = 0;
+            this.txtBxMax6.TextMarginLeft = 5;
+            this.txtBxMax6.TextMarginTop = 0;
+            this.txtBxMax6.TextPlaceholder = "MAX";
+            this.txtBxMax6.UseSystemPasswordChar = false;
+            this.txtBxMax6.WordWrap = true;
+            // 
+            // txtBxMin6
+            // 
+            this.txtBxMin6.AcceptsReturn = false;
+            this.txtBxMin6.AcceptsTab = false;
+            this.txtBxMin6.AnimationSpeed = 200;
+            this.txtBxMin6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBxMin6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtBxMin6.BackColor = System.Drawing.Color.Transparent;
+            this.txtBxMin6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBxMin6.BackgroundImage")));
+            this.txtBxMin6.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtBxMin6.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.txtBxMin6.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtBxMin6.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtBxMin6.BorderRadius = 1;
+            this.txtBxMin6.BorderThickness = 1;
+            this.txtBxMin6.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtBxMin6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBxMin6.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.txtBxMin6.DefaultText = "";
+            this.txtBxMin6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.txtBxMin6.HideSelection = true;
+            this.txtBxMin6.IconLeft = null;
+            this.txtBxMin6.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBxMin6.IconPadding = 10;
+            this.txtBxMin6.IconRight = null;
+            this.txtBxMin6.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBxMin6.Lines = new string[0];
+            this.txtBxMin6.Location = new System.Drawing.Point(412, 205);
+            this.txtBxMin6.MaxLength = 32767;
+            this.txtBxMin6.MinimumSize = new System.Drawing.Size(100, 35);
+            this.txtBxMin6.Modified = false;
+            this.txtBxMin6.Multiline = false;
+            this.txtBxMin6.Name = "txtBxMin6";
+            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBxMin6.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.Empty;
+            stateProperties6.FillColor = System.Drawing.Color.White;
+            stateProperties6.ForeColor = System.Drawing.Color.Empty;
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtBxMin6.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBxMin6.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBxMin6.OnIdleState = stateProperties8;
+            this.txtBxMin6.PasswordChar = '\0';
+            this.txtBxMin6.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtBxMin6.PlaceholderText = "MIN";
+            this.txtBxMin6.ReadOnly = false;
+            this.txtBxMin6.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtBxMin6.SelectedText = "";
+            this.txtBxMin6.SelectionLength = 0;
+            this.txtBxMin6.SelectionStart = 0;
+            this.txtBxMin6.ShortcutsEnabled = true;
+            this.txtBxMin6.Size = new System.Drawing.Size(100, 35);
+            this.txtBxMin6.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.txtBxMin6.TabIndex = 32;
+            this.txtBxMin6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtBxMin6.TextMarginBottom = 0;
+            this.txtBxMin6.TextMarginLeft = 5;
+            this.txtBxMin6.TextMarginTop = 0;
+            this.txtBxMin6.TextPlaceholder = "MIN";
+            this.txtBxMin6.UseSystemPasswordChar = false;
+            this.txtBxMin6.WordWrap = true;
+            // 
+            // txtBxVelikost6
+            // 
+            this.txtBxVelikost6.AcceptsReturn = false;
+            this.txtBxVelikost6.AcceptsTab = false;
+            this.txtBxVelikost6.AnimationSpeed = 200;
+            this.txtBxVelikost6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBxVelikost6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtBxVelikost6.BackColor = System.Drawing.Color.Transparent;
+            this.txtBxVelikost6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBxVelikost6.BackgroundImage")));
+            this.txtBxVelikost6.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtBxVelikost6.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.txtBxVelikost6.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtBxVelikost6.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtBxVelikost6.BorderRadius = 1;
+            this.txtBxVelikost6.BorderThickness = 1;
+            this.txtBxVelikost6.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtBxVelikost6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBxVelikost6.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.txtBxVelikost6.DefaultText = "";
+            this.txtBxVelikost6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.txtBxVelikost6.HideSelection = true;
+            this.txtBxVelikost6.IconLeft = null;
+            this.txtBxVelikost6.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBxVelikost6.IconPadding = 10;
+            this.txtBxVelikost6.IconRight = null;
+            this.txtBxVelikost6.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBxVelikost6.Lines = new string[0];
+            this.txtBxVelikost6.Location = new System.Drawing.Point(148, 205);
+            this.txtBxVelikost6.MaxLength = 32767;
+            this.txtBxVelikost6.MinimumSize = new System.Drawing.Size(100, 35);
+            this.txtBxVelikost6.Modified = false;
+            this.txtBxVelikost6.Multiline = false;
+            this.txtBxVelikost6.Name = "txtBxVelikost6";
+            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBxVelikost6.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.Empty;
+            stateProperties10.FillColor = System.Drawing.Color.White;
+            stateProperties10.ForeColor = System.Drawing.Color.Empty;
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtBxVelikost6.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBxVelikost6.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.Silver;
+            stateProperties12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            stateProperties12.ForeColor = System.Drawing.Color.Empty;
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBxVelikost6.OnIdleState = stateProperties12;
+            this.txtBxVelikost6.PasswordChar = '\0';
+            this.txtBxVelikost6.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtBxVelikost6.PlaceholderText = "1 - 100k";
+            this.txtBxVelikost6.ReadOnly = false;
+            this.txtBxVelikost6.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtBxVelikost6.SelectedText = "";
+            this.txtBxVelikost6.SelectionLength = 0;
+            this.txtBxVelikost6.SelectionStart = 0;
+            this.txtBxVelikost6.ShortcutsEnabled = true;
+            this.txtBxVelikost6.Size = new System.Drawing.Size(100, 35);
+            this.txtBxVelikost6.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.txtBxVelikost6.TabIndex = 32;
+            this.txtBxVelikost6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtBxVelikost6.TextMarginBottom = 0;
+            this.txtBxVelikost6.TextMarginLeft = 5;
+            this.txtBxVelikost6.TextMarginTop = 0;
+            this.txtBxVelikost6.TextPlaceholder = "1 - 100k";
+            this.txtBxVelikost6.UseSystemPasswordChar = false;
+            this.txtBxVelikost6.WordWrap = true;
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Black;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "VYGENEROVAT";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.Black;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(39)))));
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.bunifuThinButton21.Location = new System.Drawing.Point(292, 384);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(196, 51);
+            this.bunifuThinButton21.TabIndex = 31;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
+            // 
+            // txtBxCas
+            // 
+            this.txtBxCas.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBxCas.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtBxCas.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtBxCas.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBxCas.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtBxCas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtBxCas.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.txtBxCas.HintText = "ČAS";
+            this.txtBxCas.isPassword = false;
+            this.txtBxCas.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.txtBxCas.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.txtBxCas.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.txtBxCas.LineThickness = 3;
+            this.txtBxCas.Location = new System.Drawing.Point(564, 318);
+            this.txtBxCas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBxCas.MaxLength = 32767;
+            this.txtBxCas.Name = "txtBxCas";
+            this.txtBxCas.Size = new System.Drawing.Size(98, 34);
+            this.txtBxCas.TabIndex = 29;
+            this.txtBxCas.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtBxPoleOut6
+            // 
+            this.txtBxPoleOut6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBxPoleOut6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtBxPoleOut6.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtBxPoleOut6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBxPoleOut6.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtBxPoleOut6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtBxPoleOut6.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.txtBxPoleOut6.HintText = "POLE";
+            this.txtBxPoleOut6.isPassword = false;
+            this.txtBxPoleOut6.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.txtBxPoleOut6.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.txtBxPoleOut6.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
+            this.txtBxPoleOut6.LineThickness = 3;
+            this.txtBxPoleOut6.Location = new System.Drawing.Point(88, 318);
+            this.txtBxPoleOut6.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBxPoleOut6.MaxLength = 32767;
+            this.txtBxPoleOut6.Name = "txtBxPoleOut6";
+            this.txtBxPoleOut6.Size = new System.Drawing.Size(385, 34);
+            this.txtBxPoleOut6.TabIndex = 29;
+            this.txtBxPoleOut6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuSeparator9
+            // 
+            this.bunifuSeparator9.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator9.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            this.bunifuSeparator9.LineThickness = 1;
+            this.bunifuSeparator9.Location = new System.Drawing.Point(68, 257);
+            this.bunifuSeparator9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuSeparator9.Name = "bunifuSeparator9";
+            this.bunifuSeparator9.Size = new System.Drawing.Size(624, 48);
+            this.bunifuSeparator9.TabIndex = 28;
+            this.bunifuSeparator9.Transparency = 255;
+            this.bunifuSeparator9.Vertical = false;
+            // 
+            // bunifuSeparator8
+            // 
+            this.bunifuSeparator8.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator8.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            this.bunifuSeparator8.LineThickness = 1;
+            this.bunifuSeparator8.Location = new System.Drawing.Point(68, 150);
+            this.bunifuSeparator8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuSeparator8.Name = "bunifuSeparator8";
+            this.bunifuSeparator8.Size = new System.Drawing.Size(624, 48);
+            this.bunifuSeparator8.TabIndex = 28;
+            this.bunifuSeparator8.Transparency = 255;
+            this.bunifuSeparator8.Vertical = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Open Sans", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(60, 39);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(311, 45);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "6. Generování pole";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label14.Location = new System.Drawing.Point(64, 205);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(78, 35);
+            this.label14.TabIndex = 27;
+            this.label14.Text = "Velikost:";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label16
+            // 
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label16.Location = new System.Drawing.Point(510, 205);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(78, 35);
+            this.label16.TabIndex = 27;
+            this.label16.Text = "<>";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label15
+            // 
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label15.Location = new System.Drawing.Point(309, 205);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(78, 35);
+            this.label15.TabIndex = 27;
+            this.label15.Text = "Rozsah:";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label13.Location = new System.Drawing.Point(64, 100);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(676, 48);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "Statická metoda, jenž vygeneruje pole náhodných čísel dle zadaných parametrů a vr" +
+    "átí čas procesu.\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // tabPage8
             // 
             this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.tabPage8.Controls.Add(this.bunifuSeparator10);
+            this.tabPage8.Controls.Add(this.label17);
+            this.tabPage8.Controls.Add(this.label19);
+            this.tabPage8.Controls.Add(this.label18);
             this.tabPage8.Location = new System.Drawing.Point(4, 4);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
@@ -1069,80 +1703,83 @@
             this.btn1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
-            // btnVynulovat4
+            // bunifuSeparator10
             // 
-            this.btnVynulovat4.ActiveBorderThickness = 1;
-            this.btnVynulovat4.ActiveCornerRadius = 20;
-            this.btnVynulovat4.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
-            this.btnVynulovat4.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnVynulovat4.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
-            this.btnVynulovat4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.btnVynulovat4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVynulovat4.BackgroundImage")));
-            this.btnVynulovat4.ButtonText = "VYNULOVAT";
-            this.btnVynulovat4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVynulovat4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVynulovat4.ForeColor = System.Drawing.Color.Black;
-            this.btnVynulovat4.IdleBorderThickness = 1;
-            this.btnVynulovat4.IdleCornerRadius = 20;
-            this.btnVynulovat4.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(39)))));
-            this.btnVynulovat4.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
-            this.btnVynulovat4.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
-            this.btnVynulovat4.Location = new System.Drawing.Point(410, 359);
-            this.btnVynulovat4.Margin = new System.Windows.Forms.Padding(5);
-            this.btnVynulovat4.Name = "btnVynulovat4";
-            this.btnVynulovat4.Size = new System.Drawing.Size(149, 41);
-            this.btnVynulovat4.TabIndex = 22;
-            this.btnVynulovat4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnVynulovat4.Click += new System.EventHandler(this.btnVynulovat4_Click);
+            this.bunifuSeparator10.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator10.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            this.bunifuSeparator10.LineThickness = 1;
+            this.bunifuSeparator10.Location = new System.Drawing.Point(68, 127);
+            this.bunifuSeparator10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuSeparator10.Name = "bunifuSeparator10";
+            this.bunifuSeparator10.Size = new System.Drawing.Size(624, 48);
+            this.bunifuSeparator10.TabIndex = 31;
+            this.bunifuSeparator10.Transparency = 255;
+            this.bunifuSeparator10.Vertical = false;
             // 
-            // txtBxPoleOut
+            // label17
             // 
-            this.txtBxPoleOut.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtBxPoleOut.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtBxPoleOut.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtBxPoleOut.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBxPoleOut.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtBxPoleOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtBxPoleOut.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.txtBxPoleOut.HintText = "POLE";
-            this.txtBxPoleOut.isPassword = false;
-            this.txtBxPoleOut.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
-            this.txtBxPoleOut.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
-            this.txtBxPoleOut.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
-            this.txtBxPoleOut.LineThickness = 3;
-            this.txtBxPoleOut.Location = new System.Drawing.Point(199, 238);
-            this.txtBxPoleOut.Margin = new System.Windows.Forms.Padding(4);
-            this.txtBxPoleOut.MaxLength = 32767;
-            this.txtBxPoleOut.Name = "txtBxPoleOut";
-            this.txtBxPoleOut.Size = new System.Drawing.Size(385, 33);
-            this.txtBxPoleOut.TabIndex = 20;
-            this.txtBxPoleOut.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Open Sans", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(60, 39);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(244, 45);
+            this.label17.TabIndex = 29;
+            this.label17.Text = "7. Game of life";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnNacist4
+            // label18
             // 
-            this.btnNacist4.ActiveBorderThickness = 1;
-            this.btnNacist4.ActiveCornerRadius = 20;
-            this.btnNacist4.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
-            this.btnNacist4.ActiveForecolor = System.Drawing.Color.Black;
-            this.btnNacist4.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
-            this.btnNacist4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.btnNacist4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNacist4.BackgroundImage")));
-            this.btnNacist4.ButtonText = "NAČÍST";
-            this.btnNacist4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNacist4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNacist4.ForeColor = System.Drawing.Color.Black;
-            this.btnNacist4.IdleBorderThickness = 1;
-            this.btnNacist4.IdleCornerRadius = 20;
-            this.btnNacist4.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(39)))));
-            this.btnNacist4.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
-            this.btnNacist4.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(119)))), ((int)(((byte)(89)))));
-            this.btnNacist4.Location = new System.Drawing.Point(236, 359);
-            this.btnNacist4.Margin = new System.Windows.Forms.Padding(5);
-            this.btnNacist4.Name = "btnNacist4";
-            this.btnNacist4.Size = new System.Drawing.Size(149, 41);
-            this.btnNacist4.TabIndex = 22;
-            this.btnNacist4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnNacist4.Click += new System.EventHandler(this.btnNacist4_Click);
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label18.Location = new System.Drawing.Point(64, 100);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(676, 48);
+            this.label18.TabIndex = 30;
+            this.label18.Text = "Simulace života.\r\n";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label19
+            // 
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label19.Location = new System.Drawing.Point(64, 271);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(676, 48);
+            this.label19.TabIndex = 30;
+            this.label19.Text = "COMING SOON";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label20.Location = new System.Drawing.Point(144, 370);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(198, 23);
+            this.label20.TabIndex = 5;
+            this.label20.Text = "Author: Michal Chamrád";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuPictureBox1
+            // 
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.BorderRadius = 50;
+            this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(512, 284);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(150, 150);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 8;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
             // 
             // Form1
             // 
@@ -1171,7 +1808,14 @@
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1229,6 +1873,31 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnVynulovat4;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtBxPoleOut;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNacist4;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnNacist5;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnPrevest5;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtBxPoleOut5;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtBxCas;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtBxPoleOut6;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator8;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txtBxMax6;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txtBxMin6;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txtBxVelikost6;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator9;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator10;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
     }
 }
 
