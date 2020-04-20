@@ -50,7 +50,7 @@ namespace firstAPI.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] string value)
         {
-            return new OkResult(); //insert update delete 
+            return new OkResult(); //insert update (delete) 
             // chyby http status code result 
         }
 
