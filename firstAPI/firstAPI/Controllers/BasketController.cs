@@ -13,7 +13,7 @@ namespace firstAPI.Controllers
     [ApiController]
     public class BasketController : ControllerBase
     {
-        string connectionString = "Data Source=BLACKCH;Initial Catalog=shopingBasket;Integrated Security=True";
+        string connectionString = "Data Source=WebDev.SPSEJecna.cz,11433;Initial Catalog=pv;User ID=student;Password=StudentPV";
 
         /// <summary>
         /// Vrací Položky v nákupním košíku daného id
