@@ -13,11 +13,16 @@ namespace firstMVC.Controllers
         {
             List<SubjectModel> l = new List<SubjectModel>();
 
-            SubjectModel s = new SubjectModel { ID = 1, FirstName = "Michal", LastName = "Chamrád", SchoolClass = "C2a" };
 
-            l.Add(s);
 
-            return View(l);
+
+
+            //TEST bez DB
+            //SubjectModel s = new SubjectModel { ID = 1, FirstName = "Michal", LastName = "Chamrád", SchoolClass = "C2a" };
+
+            //l.Add(s);
+
+            return View();
         }
 
 

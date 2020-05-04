@@ -16,7 +16,7 @@ namespace firstMVC.Models
         [Display(Name = "Příjmení")]
         public string LastName{ get; set; }
         [Display(Name = "Třída")]
-       // [RegularExpression("[]")]  // Validace vstupu dat
+        //[RegularExpression("[]")]  // Validace vstupu dat
         public string SchoolClass{ get; set; }
         
 
