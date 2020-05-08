@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using firstMVC.DAOs;
 using firstMVC.Helpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -28,6 +29,9 @@ namespace firstMVC
 
             // propojení dat z nastavení do modelové tøídy
             services.AddOptions<DBSettings>().Bind(Configuration.GetSection("DBSettings"));
+
+            // registrace trøídy jako služby 
+            services.AddTransient<BasketDAO>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

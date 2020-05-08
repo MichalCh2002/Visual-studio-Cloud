@@ -9,7 +9,7 @@ namespace firstMVC.Models
     public class BasketModel
     {
         [Display(Name = "ID")]
-        public int? ID { get; set; }
+        public int ID { get; set; }
         [Required]
         [Display(Name = "Název Produktu")]
         public string Produkt { get; set; }

@@ -6,10 +6,10 @@
 
 <h1>DELETE</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h2>Are you sure you want to delete <strong>@Html.DisplayFor(model => model.Produkt)</strong>?</h2>
 <div>
     <hr />
-    <form asp-action="Delete">
+    <form asp-action="Delete" method="post">
         <input type="submit" value="Delete" class="btn btn-danger" /> |
         <a asp-action="Index">Back to List</a>
     </form>

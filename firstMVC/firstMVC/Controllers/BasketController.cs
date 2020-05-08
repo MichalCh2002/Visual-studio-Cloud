@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using firstMVC.DAOs;
 using firstMVC.Helpers;
 using firstMVC.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -15,33 +17,13 @@ namespace firstMVC.Controllers
 {
     public class BasketController : Controller
     {
-
-        #region DBSettings
-        /// <summary>
-        /// Konstruktor pro načtení ConnectionStringu z appSettings
-        /// </summary>
-        /// <param name="dbSettings"></param>
-        public BasketController(IOptions<DBSettings> dbSettings)
+        #region DAO Konstruktor
+        public BasketController(BasketDAO d)
         {
-            _dbSettings = dbSettings.Value;
+            dao = d;
         }
 
-        DBSettings _dbSettings; //field na urovni třídy
-        
-        public string Local
-        {
-            get { return _dbSettings.ConnectionStringLocal; }
-        }
-        public string PV
-        {
-            get { return _dbSettings.ConnectionStringPV; }
-        }
-
-        // ZDE SE NASTAVÍ POŽADOVANÁ DATABÁZE
-        public string connectionString
-        {
-            get { return PV; }
-        }
+        BasketDAO dao;
         #endregion
 
         #region INDEX
@@ -51,52 +33,18 @@ namespace firstMVC.Controllers
         /// <returns></returns>
         public IActionResult Index()
         {
-            //list položek nákupu
-            List<BasketModel> basketList = new List<BasketModel>();
-
-            using (SqlConnection pripojeni = new SqlConnection(connectionString)) //deklarace pripojení
-            {
-                // Dotaz se selectem
-                string select = "select PolozkaNakupu.id, p.nazev Produkt, pocet_ks Ks, p.cena Cena_ks from PolozkaNakupu inner join Produkt p on PolozkaNakupu.produkt_id = p.id where kosik_id = 1";
-
-                // Deklarace příkazu
-                SqlCommand prikaz = new SqlCommand(select, pripojeni);
-
-                // Otevření spojení
-                pripojeni.Open();
-
-                // Provedení příkazu
-                SqlDataReader dataReader = prikaz.ExecuteReader();
-
-                // načtení jednotlivých položek košíku do Listu
-                while (dataReader.Read())
-                {
-                    basketList.Add(new BasketModel()
-                    {
-                        ID = (int)dataReader[0],
-                        Produkt = (string)dataReader[1],
-                        Ks = (int)dataReader[2],
-                        CenaKs = (int)dataReader[3]
-                    });
-                }
-            }
-
-            // nadpis stránky dle DB
-            if(connectionString == PV)
-            {
-                ViewBag.title = "Databaze PV";
-            }
-            if (connectionString == Local)
-            {
-                ViewBag.title = "Databaze Local";
-            }
+            //nadpis dle db
+            ViewBag.title = dao.DBType();
 
             // Zobrazení košiku s načtenými daty
-            return View(basketList);
-        }
-        #endregion
+            List<BasketModel> itemsList = dao.AllProductsInBasket(1);
 
+            return View(itemsList);
+        } 
+        #endregion 
+        
         #region ADD
+
         /// <summary>
         /// Zobrazí formulář pro vložení nového zboží
         /// </summary>
@@ -105,37 +53,8 @@ namespace firstMVC.Controllers
         {
             //TODO: 1. AJAX - LIVE ZOBRAZENÍ CENY/KS A CENY_CELKEM PŘI VOLBĚ V DRROPDOWN LISTU
 
-            #region DROPDOWN LIST - produkty
-            //dropDown produkty
-            List<SelectListItem> produkty = new List<SelectListItem>();
-
-            // Načtení hodnot do dropDown listu (+ ceny pro AJAX live zobrazení)
-            using (SqlConnection pripojeni = new SqlConnection(connectionString)) //deklarace pripojení
-            {
-                // Dotaz se selectem
-                string select = "SELECT nazev,cena FROM Produkt;";
-                // Deklarace příkazu
-                SqlCommand prikaz = new SqlCommand(select, pripojeni);
-
-                // Otevření spojení
-                pripojeni.Open();
-
-                // Provedení příkazu
-                SqlDataReader dataReader = prikaz.ExecuteReader();
-
-                int i = 0;
-                while (dataReader.Read())
-                {
-                    i++;
-                    produkty.Add(new SelectListItem()
-                    {
-                        Value = (string)dataReader[0],
-                    });
-                }
-            }
             //dropdown list 
-            ViewBag.productList = produkty;
-            #endregion
+            ViewBag.productList = dao.AllProductTypes();
 
             // zobrazení view na přidání zboží
             return View();
@@ -149,76 +68,41 @@ namespace firstMVC.Controllers
         [HttpPost] //viz. nastavení v html form
         public ActionResult Add(BasketModel newItem)
         {
-            //validace (?bůh ví co dělá?)
+
+            //!!! kontrola vyjímek zde (uživatelská chyba) !!!
+
+            //validace (?bůh ví co to dělá?)
             if (!ModelState.IsValid)
             {
                 return View(newItem);
             }
 
-            //vložení nového itemu do košíku
-            using (SqlConnection pripojeni = new SqlConnection(connectionString)) //deklarace pripojení
-            {
-                // Dotaz se selectem
-                string insert = "EXEC mp_pridej_produkt  1 ," + newItem.Produkt + ", " + newItem.Ks + ";";
-
-                // Deklarace příkazu
-                SqlCommand prikaz = new SqlCommand(insert, pripojeni);
-
-                // Otevření spojení
-                pripojeni.Open();
-
-                // Provedení příkazu
-                prikaz.ExecuteNonQuery();
-            }
+            // vložení nové položky do košíku
+            dao.AddProduct(newItem);
 
             // Návrat do košíku
-            return Redirect("/Basket");
+            return RedirectToAction("Index");
         }
+        
         #endregion
-
+         
         #region DELETE
         /// <summary>
         /// Otevře potvrzení zda skutečně chcete smazat
         /// </summary>
         /// <param name="id">id položky ke smazání</param>
         /// <returns></returns>
-        public IActionResult Delete(int? id)
+        public IActionResult Delete(int id)
         {
-            #region Ověření existence příchozího ID
-            // chby: není-li id
-            if (id == null)
+
+            //Ověření existence záznamu v DB
+            if (!dao.ExistProduct(id))
             {
-                return BadRequest();
+                return NotFound();
             }
-            #endregion
-
-            #region Ověření existence záznamu v DB
-            //ověření existence v db (NEFUNKČNÍ)
-            using (SqlConnection pripojeni = new SqlConnection(connectionString)) //deklarace pripojení
-            {
-                // Dotaz se selectem
-                string select = "SELECT kosik_id FROM PolozkaNakupu where id =" + id;
-
-                // Deklarace příkazu
-                SqlCommand prikaz = new SqlCommand(select, pripojeni);
-
-                // Otevření spojení
-                pripojeni.Open();
-
-                int? value = null;
-                // !! PŘI ABSENCI ZÁZNAMU V DB, EXECUTESCALAR VYHODÍ VYJÍMKU, NE NULL !!
-                value = (int)prikaz.ExecuteScalar();
-
-                if (value == null)
-                {
-                    return NotFound();
-                }
-
-            }
-            #endregion
 
             // pro přenos id zabaleno do BasketModelu (možná zbytečně překombinovaný)
-            BasketModel item = new BasketModel() { ID = (int)id };
+            BasketModel item = dao.SelectItem(id);
 
             return View(item);
         }
@@ -231,37 +115,27 @@ namespace firstMVC.Controllers
         [HttpPost]
         public IActionResult Delete(BasketModel item)
         {
-            using (SqlConnection pripojeni = new SqlConnection(connectionString)) //deklarace pripojení
-            {
-                // Dotaz se selectem
-                string select = "DELETE FROM PolozkaNakupu WHERE id =" + item.ID;
+            // smaže položku z košíku
+            dao.DeleteItem(item.ID);
 
-                // Deklarace příkazu
-                SqlCommand prikaz = new SqlCommand(select, pripojeni);
-
-                // Otevření spojení
-                pripojeni.Open();
-
-                // Provedení příkazu
-                prikaz.ExecuteNonQuery();
-
-            }
             // návrat do košíku
-            return Redirect("/Basket");
+            return RedirectToAction("Index");
         }
         #endregion
-
+         
         #region EDIT
         /// <summary>
         /// Otevře view pro Edit
         /// </summary>
+        /// <param name="id">id editované položky</param>
         /// <returns></returns>
-        public ActionResult Edit()
+        public IActionResult Edit(int id)
         {
-            //TODO: 1. vypsání detailů o editovaném zboží v pohledu
+            //TODO: 1. vypsání detailů o editovaném zboží v pohledu [DONE]
             //      2. AJAX - live náhled celkové ceny již při psaní počtu kusů
+            BasketModel item = dao.SelectItem(id);
 
-            return View();
+            return View(item); //vykresluje stránku dle vložených dat
         }
 
         /// <summary>
@@ -270,28 +144,14 @@ namespace firstMVC.Controllers
         /// <param name="item">BasketModel pro přenos zadaných dat</param>
         /// <returns></returns>
         [HttpPost] //viz. nastavení v html form
-        public ActionResult Edit(BasketModel item)
+        public ActionResult Edit(BasketModel item) //načítá data ze stránky k provedení akce
         {
-            //změna počtu v db
-            using (SqlConnection pripojeni = new SqlConnection(connectionString)) //deklarace pripojení
-            {
-                // Dotaz se selectem
-                string update = "UPDATE PolozkaNakupu SET pocet_ks = "+item.Ks+" WHERE id ="+item.ID;
+            dao.EditCount(item.ID, item.Ks);
 
-                // Deklarace příkazu
-                SqlCommand prikaz = new SqlCommand(update, pripojeni);
-
-                // Otevření spojení
-                pripojeni.Open();
-
-               prikaz.ExecuteNonQuery();
-
-            }
-
-            return Redirect("/Basket");
+            return RedirectToAction("Index");
         }
         #endregion
-
-    }
-
-}
+        
+    } 
+    
+} 

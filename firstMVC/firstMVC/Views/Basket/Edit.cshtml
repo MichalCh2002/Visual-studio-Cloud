@@ -14,7 +14,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Produkt" class="control-label"></label>
-                @Html.DisplayNameFor(model => model.Produkt)
+                <strong class="text-success">@Html.DisplayFor(model => model.Produkt)</strong>
             </div>
             <div class="form-group">
                 <label asp-for="Ks" class="control-label"></label>
@@ -23,7 +23,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="CenaKs" class="control-label"></label>
-                @Html.DisplayNameFor(model => model.Produkt)
+                <strong class="text-success">@Html.DisplayFor(model => model.CenaKs) Kč</strong>
             </div>
             <div class="form-group">
                 <label asp-for="CenaCelkem" class="control-label"></label>
