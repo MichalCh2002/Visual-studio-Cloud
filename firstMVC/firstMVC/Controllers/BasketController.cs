@@ -26,6 +26,7 @@ namespace firstMVC.Controllers
         BasketDAO dao;
         #endregion
 
+
         #region INDEX
         /// <summary>
         /// Zobrazí košík
@@ -150,8 +151,6 @@ namespace firstMVC.Controllers
 
             return RedirectToAction("Index");
         }
-        #endregion
-        
+        #endregion        
     } 
-    
 } 

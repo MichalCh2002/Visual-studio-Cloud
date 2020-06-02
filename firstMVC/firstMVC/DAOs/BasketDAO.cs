@@ -17,9 +17,6 @@ namespace firstMVC.DAOs
     /// </summary>
     public class BasketDAO
     {
-
-
-
         #region DBSettings
         //DBSettings
         DBSettings _dbSettings; //field na urovni třídy
@@ -133,7 +130,7 @@ namespace firstMVC.DAOs
                 // načtení jednotlivých položek košíku do Listu
                 while (dataReader.Read())
                 {
-                    item.ID = (int)dataReader[0];
+                    item.ID = (int)dataReader["id"];
                     item.Produkt = (string)dataReader[1];
                     item.Ks = (int)dataReader[2];
                     item.CenaKs = (int)dataReader[3];
@@ -312,11 +309,5 @@ namespace firstMVC.DAOs
         }
 
         #endregion
-
-            
-
-
-
-
     }
 }
